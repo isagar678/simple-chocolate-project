@@ -1,0 +1,333 @@
+ 
+  .hero-image {
+    position: relative; /* to make sure nothing goes outside of this hero-image and does not overlap*/
+    z-index: -1; /* Set lower z-index to place the image behind navbar */
+  }
+  .hero-image {
+    background-image: url("https://simplychocolate.dk/cdn/shop/files/Hero_Web_desk_2024_11.png?v=1709197542&width=2000");
+    
+    height: 100vh;/*Viewport's max size covered by this*/
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  .text-overlay {
+    
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  .text-overlay h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 40px; /* Add space after the heading */
+  text-decoration: none; /* Remove underline */
+  font-family: 'Luminari';
+  font-style: italic;
+}
+
+  .text-overlay p {
+    font-size: 1.5em;
+    font-style: italic;
+    
+  }
+  .dark-brown-button {
+    background-color: #8B4513; /* Dark brown */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 100px;
+   margin: auto;
+   display: flex;
+    justify-content: center;
+  }
+
+  .dark-brown-button:hover {
+    background-color: #472305; /* Darker shade of brown on hover */
+    text-decoration: none; /* Remove underline on hover if needed */
+    color: white;
+    
+    
+  }
+  .premium-chocolate-heading {
+    margin-top: 100px; /* Add large space above the heading */
+    font-family: 'Snell Roundhand, cursive'; 
+    font-weight: 600;/* Change font type */
+  }
+  .premium-chocolates-heading {
+    margin-top: 100px; /* Add large space above the heading */
+    font-family: 'Snell Roundhand, cursive'; 
+   
+  }
+  
+  .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+   
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #ebe6e6;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(86, 55, 5, 0.224);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back .cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4a2b14; /* Dark brown */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.flip-card-back .cart:hover {
+  background-color: transparent; /* Darker shade of brown on hover */
+  border: 2px solid #4a2b14;
+  color: #4a2b14;
+  
+}
+
+  .image-container {
+    margin-top: 50px; /* Add space above the image row */
+  }
+  .image-container img {
+    width: 350px; /* Set image width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    margin-bottom: 30px; /* Add space between images and heading */
+    border-radius: 5px; /* Add border radius */
+    background-color: #c6bdbd76;
+  }
+  .shadow:hover{
+    width:360px;
+  }
+  .heaven-text {
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 20px;
+    font-family: 'Georgia', serif; /* Change font type */
+    color: #000; /* Black color */
+  }
+  .price-text {
+    
+    font-size: 1.5em;
+    font-family: 'Georgia', serif; /* Change font type */
+    color: #000; /* Black color */
+  }
+  .banner {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .video-container {
+    padding: 20px;
+  }
+  .video {
+    width: 100%;
+    height: 50%;
+    margin-top: 90px;
+  }
+  .robot{
+    margin-top: 150px;
+  }
+
+  .collection {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .collection button {
+    background-color: #6f3c14; /* Brown */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition for background color and text color */
+}
+  
+  .collection button:hover {
+    background-color: transparent; /* Transparent on hover */
+    color: #6f3c14; /* Brown text color on hover */
+    border: 2px solid #6f3c14; /* Brown border on hover */
+  }
+
+  .btn-transparent {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 2px solid white;
+  color: rgb(255, 255, 255);
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-transparent:hover {
+  background-color: white;
+  color: #8B4513; /* Dark brown */
+}
+.carousel-caption {
+    text-shadow: none; /* Remove text shadow */
+    color: #000; text-align: left;font-size: medium;font-family: 'Times New Roman', Times, serif;
+  }
+ 
+
+    body {
+      position: relative;
+    }
+    .navbar {
+      background-color: #3B3025; /* Dark brown background color */
+      color: #ffffff; /* White text color */
+    }
+    .navbar-nav .nav-link {
+      color: #ffffff !important; /* White text color for nav links */
+    }
+  /* footer */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li{
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+ @media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
